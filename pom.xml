@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <parent>
+        <groupId>net.guillaume.maven.parents</groupId>
+        <artifactId>vanilla</artifactId>
+        <version>1.0</version>
+    </parent>
+
+
+    <groupId>net.guillaume.damocles</groupId>
+    <artifactId>damocles</artifactId>
+    <version>1.5-SNAPSHOT</version>
+    <packaging>pom</packaging>
+
+    <name>Damocles</name>
+    <url>http://maven.apache.org</url>
+
+    <modules>
+        <module>damocles-core</module>
+        <module>damocles-webapp</module>
+    </modules>
+
+    <distributionManagement>
+        <repository>
+            <id>nexus-oups</id>
+            <name>oups.net Internal Repository</name>
+            <url>http://nexus.oups.net/content/repositories/releases/</url>
+        </repository>
+        <snapshotRepository>
+            <id>nexus-oups-snapshots</id>
+            <name>oups.net Internal Snapshot's Repository</name>
+            <url>http://nexus.oups.net/content/repositories/snapshots/</url>
+        </snapshotRepository>
+    </distributionManagement>
+
+    <scm>
+        <connection>scm:svn:http://svn.oups.net/subversion/Guillaume/damocles/trunk</connection>
+        <developerConnection>scm:svn:http://svn.oups.net/subversion/Guillaume/damocles/trunk</developerConnection>
+    </scm>
+
+    <properties>
+        <hibernate.version>4.1.7.Final</hibernate.version>
+        <spring.version>3.1.2.RELEASE</spring.version>
+        <project.build.sourceEncoding>ISO-8859-1</project.build.sourceEncoding>
+    </properties>
+
+    <dependencies>
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-core</artifactId>
+            <version>${spring.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-web</artifactId>
+            <version>${spring.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-context</artifactId>
+            <version>${spring.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-webmvc</artifactId>
+            <version>${spring.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-orm</artifactId>
+            <version>${spring.version}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.hibernate.javax.persistence</groupId>
+            <artifactId>hibernate-jpa-2.0-api</artifactId>
+            <version>1.0.1.Final</version>
+            <scope>compile</scope>
+        </dependency>
+
+        <dependency>
+            <groupId>org.hibernate</groupId>
+            <artifactId>hibernate-core</artifactId>
+            <version>${hibernate.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.hibernate</groupId>
+            <artifactId>hibernate-entitymanager</artifactId>
+            <version>${hibernate.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>commons-dbcp</groupId>
+            <artifactId>commons-dbcp</artifactId>
+            <version>1.4</version>
+        </dependency>
+        <dependency>
+            <groupId>org.hsqldb</groupId>
+            <artifactId>hsqldb</artifactId>
+            <version>2.2.8</version>
+        </dependency>
+
+    </dependencies>
+
+</project>
