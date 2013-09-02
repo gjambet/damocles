@@ -8,7 +8,6 @@
         <version>1.0</version>
     </parent>
 
-
     <groupId>net.guillaume.damocles</groupId>
     <artifactId>damocles</artifactId>
     <version>1.5-SNAPSHOT</version>
@@ -21,6 +20,14 @@
         <module>damocles-core</module>
         <module>damocles-webapp</module>
     </modules>
+
+    <repositories>
+        <repository>
+            <id>nexus-oups</id>
+            <name>oups.net Internal Repository</name>
+            <url>http://nexus.oups.net/content/groups/public/</url>
+        </repository>
+    </repositories>
 
     <distributionManagement>
         <repository>
