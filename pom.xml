@@ -15,7 +15,7 @@
     <packaging>pom</packaging>
 
     <name>Damocles</name>
-    <url>http://maven.apache.org</url>
+    <url>http://www.damocles.me</url>
 
     <modules>
         <module>damocles-core</module>
@@ -44,8 +44,8 @@
     </distributionManagement>
 
     <scm>
-        <connection>scm:svn:http://svn.oups.net/subversion/Guillaume/damocles/trunk</connection>
-        <developerConnection>scm:svn:http://svn.oups.net/subversion/Guillaume/damocles/trunk</developerConnection>
+        <connection>scm:git:https://github.com/gjambet/damocles.git</connection>
+        <developerConnection>scm:git:https://github.com/gjambet/damocles.git</developerConnection>
     </scm>
 
     <properties>
