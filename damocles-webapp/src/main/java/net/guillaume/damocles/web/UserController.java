@@ -19,7 +19,7 @@ import org.springframework.web.servlet.ModelAndView;
 public class UserController {
 
     private static final String SUCCESS = "user-home.jsp";
-    private static final String FAIL = "index.jsp";
+    private static final String FAIL = "home.jsp";
 
     @Autowired
     private UserService userService;
