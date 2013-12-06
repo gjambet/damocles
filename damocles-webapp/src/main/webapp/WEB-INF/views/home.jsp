@@ -3,12 +3,20 @@
  <head><title>Damocles</title></head>
  <body>
 
-    <div>
-      <h1>Damocles</h1>
-    </div>
-	<div>
-	  <a href="${pageContext.request.contextPath}/user/register">S'enregistrer</a>&nbsp;<a href="${pageContext.request.contextPath}/user/login">Se logger</a>
-	</div>
+    <table>
+        <tr>
+            <td>
+                <div>
+                    <h1>Damocles</h1>
+                </div>
+            </td>
+            <td>
+                <div>
+                    <a href="${pageContext.request.contextPath}/user/register">S'enregistrer</a>&nbsp;<a href="${pageContext.request.contextPath}/user/login">Se logger</a>
+                </div>
+            </td>
+        </tr>
+    </table>
 
 	<br/>
 
