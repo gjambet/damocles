@@ -8,7 +8,7 @@
       <h1>Damocles</h1>
     </div>
 	<div>
-	  <a href="/damocles/register.jsp">S'enregistrer</a>&nbsp;<a href="/damocles/login.jsp">Se logger</a>
+	  <a href="${pageContext.request.contextPath}/user/register">S'enregistrer</a>&nbsp;<a href="${pageContext.request.contextPath}/user/login">Se logger</a>
 	</div>
 
 	<br/>
