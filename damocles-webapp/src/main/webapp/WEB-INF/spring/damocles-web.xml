@@ -18,6 +18,8 @@
     <!-- Declare the Resolver <bean id="localeResolver" class="org.springframework.web.servlet.i18n.SessionLocaleResolver"
         /> -->
 
+    <mvc:resources mapping="/resources/**" location="/static/" />
+
     <bean id="viewResolver" class="org.springframework.web.servlet.view.InternalResourceViewResolver">
         <property name="viewClass" value="org.springframework.web.servlet.view.JstlView"/>
         <property name="prefix" value="/WEB-INF/views/"/>
