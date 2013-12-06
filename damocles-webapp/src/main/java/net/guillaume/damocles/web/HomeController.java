@@ -17,7 +17,7 @@ import java.util.List;
 @Controller
 public class HomeController {
 
-    private static final String SUCCESS = "home.jsp";
+    private static final String SUCCESS = "home";
 
     @RequestMapping(value = "/")
     public String create() {

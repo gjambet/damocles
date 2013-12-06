@@ -22,7 +22,7 @@ import org.springframework.web.servlet.ModelAndView;
 @Controller
 public class GuardController {
 
-    private static final String SUCCESS = "user-home.jsp";
+    private static final String SUCCESS = "user-home";
     
     @Autowired
     private GuardService guardService;
