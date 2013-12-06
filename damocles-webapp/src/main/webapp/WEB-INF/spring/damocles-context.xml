@@ -18,43 +18,9 @@
 
 	<context:component-scan base-package="net.guillaume" />
 
-	<mvc:annotation-driven />
+    <import resource="damocles-web.xml"/>
 
-	<!-- <bean id="messageSource" class="org.springframework.context.support.ResourceBundleMessageSource" 
-		p:basenames="messages" /> -->
-
-	<!-- Declare the Interceptor <mvc:interceptors> <bean class="org.springframework.web.servlet.i18n.LocaleChangeInterceptor" 
-		p:paramName="locale" /> </mvc:interceptors> -->
-
-	<!-- Declare the Resolver <bean id="localeResolver" class="org.springframework.web.servlet.i18n.SessionLocaleResolver" 
-		/> -->
-
-	<tx:annotation-driven transaction-manager="transactionManager" />
-
-	<bean id="transactionManager" class="org.springframework.orm.jpa.JpaTransactionManager">
-		<property name="entityManagerFactory" ref="entityManagerFactory" />
-	</bean>
-
-	<bean id="entityManagerFactory"
-		class="org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean">
-
-		<property name="dataSource" ref="hsqldbDataSource" />
-
-		<property name="persistenceXmlLocation" value="classpath:META-INF/persistence.xml" />
-
-	</bean>
-
-	<!-- <jee:jndi-lookup id="dataSource" jndi-name="jdbc/my_dataSource1.1" 
-		cache="true" resource-ref="true" lookup-on-startup="true" proxy-interface="javax.sql.DataSource" 
-		/> -->
-
-	<bean id="hsqldbDataSource" class="org.apache.commons.dbcp.BasicDataSource"
-		destroy-method="close">
-		<property name="driverClassName" value="org.hsqldb.jdbcDriver" />
-		<property name="url" value="jdbc:hsqldb:mem:database" />
-		<property name="username" value="sa" />
-		<property name="password" value="" />
-	</bean>
+    <import resource="damocles-database.xml"/>
 
 </beans>
                 
