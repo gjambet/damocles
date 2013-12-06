@@ -7,14 +7,27 @@ import net.guillaume.damocles.entities.Message;
 import net.guillaume.damocles.entities.Recipient;
 import net.guillaume.damocles.entities.Trigger;
 
-public interface GuardService {
+import org.springframework.stereotype.Service;
 
-    public Guard create(Message m, Trigger t, List<Recipient> recipients);
+@Service
+public class GuardService {
 
-    public void enable(Guard g);
+    public Guard create(Message m, Trigger t, List<Recipient> recipients) {
+        // TODO Auto-generated method stub
+        return null;
+    }
 
-    public void disable(Guard g);
+    public void enable(Guard g) {
+        throw new UnsupportedOperationException();
+    }
 
-    public void fire(Guard g);
+    public void disable(Guard g) {
+        throw new UnsupportedOperationException();
+    }
+
+    public void fire(Guard g) {
+        throw new UnsupportedOperationException();
+    }
+
 
 }

@@ -6,7 +6,7 @@ import java.util.Date;
 public class TimeVariant {
 
     public Date getTime() {
-	return Calendar.getInstance().getTime();
+        return Calendar.getInstance().getTime();
     }
 
 }

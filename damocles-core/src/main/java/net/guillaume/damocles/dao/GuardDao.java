@@ -16,23 +16,22 @@ public class GuardDao {
     @PersistenceContext(name = "persistenceUnit")
     private EntityManager em;
 
-    private Logger logger;
+    private Logger logger = LoggerFactory.getLogger(getClass());
 
     public GuardDao() {
-	logger = LoggerFactory.getLogger(getClass());
     }
 
     public Guard save(Guard guard) {
-	Guard g = guard;
-	if (guard.getId() == null) {
-	    em.persist(guard);
-	} else {
-	    g = em.merge(guard);
-	}
-	em.flush();
+        Guard g = guard;
+        if (guard.getId() == null) {
+            em.persist(guard);
+        } else {
+            g = em.merge(guard);
+        }
+        em.flush();
 
-	logger.info("guard persisted with id : " + g.getId());
-	return g;
+        logger.info("guard persisted with id : " + g.getId());
+        return g;
 
     }
 
