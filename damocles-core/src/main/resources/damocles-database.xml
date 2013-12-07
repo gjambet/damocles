@@ -12,13 +12,9 @@
 		<property name="entityManagerFactory" ref="entityManagerFactory" />
 	</bean>
 
-	<bean id="entityManagerFactory"
-		class="org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean">
-
+	<bean id="entityManagerFactory" class="org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean">
 		<property name="dataSource" ref="hsqldbDataSource" />
-
 		<property name="persistenceXmlLocation" value="classpath:META-INF/persistence.xml" />
-
 	</bean>
 
 	<!-- <jee:jndi-lookup id="dataSource" jndi-name="jdbc/my_dataSource1.1" 

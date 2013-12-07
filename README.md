@@ -2,6 +2,7 @@ damocles
 ========
 
 todo :
++ add compilation des jsps
 + upgrade spring version
 + clean poms
 + sortir la datasource de spring pour le context.xml du tomcat7:run

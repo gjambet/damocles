@@ -13,7 +13,7 @@
 
     <import resource="damocles-web.xml"/>
 
-    <import resource="damocles-database.xml"/>
+    <import resource="classpath*:damocles-database.xml"/>
 
 </beans>
                 
