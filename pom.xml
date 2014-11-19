@@ -31,7 +31,8 @@
 
     <properties>
         <hibernate.version>4.1.7.Final</hibernate.version>
-        <spring.version>3.2.5.RELEASE</spring.version>
+        <spring.version>3.2.12.RELEASE</spring.version>
+        <spring.security.version>3.2.5.RELEASE</spring.security.version>
         <project.build.sourceEncoding>ISO-8859-1</project.build.sourceEncoding>
     </properties>
 
@@ -189,7 +190,7 @@
                             <url>http://damocles.oups.net/manager/text</url>
                             <warFile>${project.build.directory}/${project.artifactId}.war</warFile>
                             <server>tomcat-manager-prodbox</server>
-                            <path>/${project.artifactId}</path>
+                            <path>/</path>
                         </configuration>
                     </plugin>
                 </plugins>
