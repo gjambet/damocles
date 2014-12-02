@@ -175,27 +175,4 @@
 
     </build>
 
-    <profiles>
-        <profile>
-            <id>jenkins</id>
-            <activation>
-                <activeByDefault>false</activeByDefault>
-            </activation>
-            <build>
-                <plugins>
-                    <plugin>
-                        <groupId>org.apache.tomcat.maven</groupId>
-                        <artifactId>tomcat7-maven-plugin</artifactId>
-                        <configuration>
-                            <url>http://www.damocles.me/manager/text</url>
-                            <warFile>${project.build.directory}/${project.artifactId}.war</warFile>
-                            <server>tomcat-manager-prodbox</server>
-                            <path>/</path>
-                        </configuration>
-                    </plugin>
-                </plugins>
-            </build>
-        </profile>
-    </profiles>
-
 </project>
